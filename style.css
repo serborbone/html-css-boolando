@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* riga articoli */
+
+.row {
+  width:50%;
+  margin: auto;
+}
+
+/* contenitore articolo */
+.article {
+  display: inline-block;
+}
+
+.img-block-wrap {
+  display: inline-block;
+  position: relative;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* dimensioni IMG */
+
+.article figure .first-img, .altern-img {
+  width: 287px;
+}
+
+.article figure .altern-img {
+  display: none;
+}
+
+/* HOVER selector img */
+
+.article:hover .first-img {
+  display: none;
+} 
+
+ .article:hover .altern-img {
+  display: inline-block;
+}
+
+/* icona cuore */
+
+.article .heart-icon {
+  height: 35px;
+  width: 40px;
+  background-color: #fff;
+  text-align: center;  
+  display: inline-block;
+  position: absolute;
+  top: 7px;
+  right: 0;
+}
+
+.article .heart-icon::before {
+  content: '\2661';
+  font-size: 35px;
+  line-height: 37px;
+}
+
+/* targhetta sconto */
+
+.article .bottom-discount {
+  display: inline-block;
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+}
+
+.bottom-discount .discount-tag {
+  background-color: #EB0037;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+  font-family: helvetica, sans-serif;
+  font-weight: 600;
+}
+
+/* targhetta verde sostenibilità*/
+
+.green-tag {
+  background-color: #028759;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+  font-family: helvetica, sans-serif;
+  font-weight: 600;
+}
+
+/* Testo nome articolo e prezzo */
+
+.data-art {
+  font-family: 'Outfit', sans-serif;
+}
+
+.data-art .brand-art {
+  font-size: 14px;
+}
+
+.data-art .name-art {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.data-art .price-art {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 900;
+  color: #ED184A;
+}
+
+.data-art .price-art .old-price {
+  font-weight: 400;
+  color: #000;
+  text-decoration: line-through;
+}
