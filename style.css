@@ -6,13 +6,19 @@ body {
 /* riga articoli */
 
 .row {
-  width:50%;
-  margin: auto;
+  max-width:45%;
+  margin: 50px auto;
 }
 
 /* contenitore articolo */
+
 .article {
   display: inline-block;
+}
+
+.article:nth-child(1), 
+.article:nth-child(2) {
+  margin-right: 15px;
 }
 
 .img-block-wrap {
